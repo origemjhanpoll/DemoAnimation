@@ -1,6 +1,5 @@
 import React from "react";
 import Animated, {
-  useAnimatedProps,
   useAnimatedStyle,
   useSharedValue,
   withSpring,
@@ -13,7 +12,7 @@ import {
   GestureHandlerRootView,
   Directions,
 } from "react-native-gesture-handler";
-import { colors, cursor, pivot, position, screen } from "../../Config";
+import { colors, screen } from "../../Config";
 
 const rect_size = {
   w: screen.width - 32,

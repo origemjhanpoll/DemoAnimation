@@ -14,7 +14,7 @@ import {
   GestureHandlerRootView,
 } from "react-native-gesture-handler";
 import Svg, { Path } from "react-native-svg";
-import { colors, cursor, pivot, position, screen } from "../../Config";
+import { colors, cursor, position, screen } from "../../Config";
 import { Pivot } from "../../Components/Pivot";
 
 const AnimatedPath = Animated.createAnimatedComponent(Path);
