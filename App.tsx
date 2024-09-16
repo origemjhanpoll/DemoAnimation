@@ -1,11 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, View } from "react-native";
+import {
+  PanGesture,
+  TapGesture,
+  PinchGesture,
+  RotationGesture,
+  FlingGesture,
+} from "./src";
+import { colors } from "./src/Config";
+import "react-native-gesture-handler";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <StatusBar style="light" />
+      <PanGesture />
+      {/* <TapGesture /> */}
+      {/* <PinchGesture /> */}
+      {/* <RotationGesture /> */}
+      {/* <FlingGesture /> */}
     </View>
   );
 }
@@ -13,8 +26,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: colors.secondary,
   },
 });
